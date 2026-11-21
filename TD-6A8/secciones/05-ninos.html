@@ -10,25 +10,16 @@
       <button class="filtro" data-filtro="bebe">Bebé (0-2 años)</button>
       <button class="filtro" data-filtro="nino">Niño</button>
       <button class="filtro" data-filtro="nina">Niña</button>
+      <!-- RETO EXTRA: Filtro de uniformes -->
+      <button class="filtro" data-filtro="uniforme">Uniformes escolares</button>
     </div>
 
-    <!--
-      CÓMO EDITAR UN PRODUCTO (cada <article> es un producto):
-        data-nombre   = nombre que se guarda en el carrito
-        data-precio   = precio SOLO con números y punto (ej: 49.90)
-        data-categoria= debe ser IGUAL al data-filtro de un botón de arriba
-      El nombre y el precio también se escriben en el texto visible (h3 y p).
-      Para agregar un producto: copia un <article> completo y pégalo debajo.
-    -->
-    <!--
-      COLORES: cada bolita es un <button class="a5-color">
-        data-color = nombre del color que se muestra y va al carrito
-        style="background:#código" = color de la bolita
-    -->
     <div class="grid-productos">
+      <!-- PRODUCTO 1 -->
       <article class="producto" data-categoria="bebe" data-nombre="Body de Algodón" data-precio="39.90">
         <div class="producto-foto">
-          <img src="img/alumno5/ninos1.svg" alt="Body de Algodón">
+          <!-- Cambiado a .jpg -->
+          <img src="img/alumno5/ninos1.jpg" alt="Body de Algodón">
           <span class="producto-etiqueta">NUEVO</span>
         </div>
         <div class="producto-info">
@@ -40,9 +31,10 @@
         </div>
       </article>
 
+      <!-- PRODUCTO 2 -->
       <article class="producto" data-categoria="bebe" data-nombre="Conjunto Osito" data-precio="59.90">
         <div class="producto-foto">
-          <img src="img/alumno5/ninos2.svg" alt="Conjunto Osito">
+          <img src="img/alumno5/ninos2.jpg" alt="Conjunto Osito">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Conjunto Osito</h3>
@@ -53,22 +45,31 @@
         </div>
       </article>
 
+      <!-- PRODUCTO 3 -->
       <article class="producto" data-categoria="nino" data-nombre="Polo Dinosaurio" data-precio="34.90">
         <div class="producto-foto">
-          <img src="img/alumno5/ninos3.svg" alt="Polo Dinosaurio">
+          <img src="img/alumno5/ninos3.jpg" alt="Polo Dinosaurio">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Polo Dinosaurio</h3>
           <p class="producto-precio">S/ 34.90</p>
           <div class="a5-colores"><button class="a5-color activo" data-color="Verde" style="background:#5fae7b" aria-label="Verde"></button><button class="a5-color" data-color="Azul" style="background:#3b6fd8" aria-label="Azul"></button><button class="a5-color" data-color="Amarillo" style="background:#f2c14e" aria-label="Amarillo"></button></div>
           <p class="a5-color-texto">Color: Verde</p>
+          <!-- RETO EXTRA: Tallas -->
+          <div class="a5-tallas">
+            <button class="a5-talla-btn">2</button>
+            <button class="a5-talla-btn">4</button>
+            <button class="a5-talla-btn">6</button>
+            <button class="a5-talla-btn">8</button>
+          </div>
           <button class="btn-agregar">Agregar al carrito</button>
         </div>
       </article>
 
+      <!-- PRODUCTO 4 -->
       <article class="producto" data-categoria="nino" data-nombre="Short Deportivo" data-precio="39.90">
         <div class="producto-foto">
-          <img src="img/alumno5/ninos4.svg" alt="Short Deportivo">
+          <img src="img/alumno5/ninos4.jpg" alt="Short Deportivo">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Short Deportivo</h3>
@@ -79,9 +80,10 @@
         </div>
       </article>
 
+      <!-- PRODUCTO 5 -->
       <article class="producto" data-categoria="nina" data-nombre="Vestido Mariposa" data-precio="69.90">
         <div class="producto-foto">
-          <img src="img/alumno5/ninos5.svg" alt="Vestido Mariposa">
+          <img src="img/alumno5/ninos5.jpg" alt="Vestido Mariposa">
           <span class="producto-etiqueta">TOP</span>
         </div>
         <div class="producto-info">
@@ -89,13 +91,21 @@
           <p class="producto-precio">S/ 69.90</p>
           <div class="a5-colores"><button class="a5-color activo" data-color="Lila" style="background:#b79ce0" aria-label="Lila"></button><button class="a5-color" data-color="Rosado" style="background:#f3b3c8" aria-label="Rosado"></button></div>
           <p class="a5-color-texto">Color: Lila</p>
+          <!-- RETO EXTRA: Tallas -->
+          <div class="a5-tallas">
+            <button class="a5-talla-btn">2</button>
+            <button class="a5-talla-btn">4</button>
+            <button class="a5-talla-btn">6</button>
+            <button class="a5-talla-btn">8</button>
+          </div>
           <button class="btn-agregar">Agregar al carrito</button>
         </div>
       </article>
 
+      <!-- PRODUCTO 6 -->
       <article class="producto" data-categoria="nina" data-nombre="Casaca Acolchada" data-precio="89.90">
         <div class="producto-foto">
-          <img src="img/alumno5/ninos6.svg" alt="Casaca Acolchada">
+          <img src="img/alumno5/ninos6.jpg" alt="Casaca Acolchada">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Casaca Acolchada</h3>
@@ -105,6 +115,59 @@
           <button class="btn-agregar">Agregar al carrito</button>
         </div>
       </article>
+
+      <!-- PRODUCTO 7 -->
+      <article class="producto" data-categoria="nino" data-nombre="Pijama Estrellas" data-precio="45.90">
+        <div class="producto-foto">
+          <img src="img/alumno5/ninos7.jpg" alt="Pijama Estrellas">
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Pijama Estrellas</h3>
+          <p class="producto-precio">S/ 45.90</p>
+          <div class="a5-colores"><button class="a5-color activo" data-color="Gris" style="background:#95a5a6" aria-label="Gris"></button><button class="a5-color" data-color="Azul" style="background:#34495e" aria-label="Azul"></button></div>
+          <p class="a5-color-texto">Color: Gris</p>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 8 -->
+      <article class="producto" data-categoria="uniforme" data-nombre="Uniforme Escolar Niño" data-precio="79.90">
+        <div class="producto-foto">
+          <img src="img/alumno5/ninos8.jpg" alt="Uniforme Escolar Niño">
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Uniforme Escolar Niño</h3>
+          <p class="producto-precio">S/ 79.90</p>
+          <div class="a5-colores"><button class="a5-color activo" data-color="Azul Marino" style="background:#1a2a44" aria-label="Azul Marino"></button></div>
+          <p class="a5-color-texto">Color: Azul Marino</p>
+          <div class="a5-tallas">
+            <button class="a5-talla-btn">4</button>
+            <button class="a5-talla-btn">6</button>
+            <button class="a5-talla-btn">8</button>
+          </div>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 9 -->
+      <article class="producto" data-categoria="uniforme" data-nombre="Uniforme Escolar Niña" data-precio="79.90">
+        <div class="producto-foto">
+          <img src="img/alumno5/ninos9.jpg" alt="Uniforme Escolar Niña">
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Uniforme Escolar Niña</h3>
+          <p class="producto-precio">S/ 79.90</p>
+          <div class="a5-colores"><button class="a5-color activo" data-color="Plomo" style="background:#7f8c8d" aria-label="Plomo"></button></div>
+          <p class="a5-color-texto">Color: Plomo</p>
+          <div class="a5-tallas">
+            <button class="a5-talla-btn">4</button>
+            <button class="a5-talla-btn">6</button>
+            <button class="a5-talla-btn">8</button>
+          </div>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
