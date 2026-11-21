@@ -26,7 +26,8 @@
       corazon.textContent = marcado ? '♥' : '♡';
       favoritos += marcado ? 1 : -1;
       contador.textContent = favoritos;
-      if (marcado) mostrarToast('❤️ Agregado a favoritos');
+      // Reto: mensaje distinto al quitar
+      mostrarToast(marcado ? '❤️ Agregado a favoritos' : 'Quitado de favoritos');
     });
   });
 
