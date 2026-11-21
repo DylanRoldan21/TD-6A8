@@ -1,10 +1,74 @@
-/* ALUMNO 5 - Niños. Usa SOLO clases que empiecen con .a5- */
-.a5-seccion { background: linear-gradient(180deg, #ffffff, #eef5ff); }
-.a5-seccion .titulo-seccion { color: #3b6fd8; }
-.a5-seccion .filtro.activo { background: #3b6fd8; border-color: #3b6fd8; }
+/* =========================================
+   ALUMNO 5 - Niños. Usa SOLO clases que empiecen con .a5-
+   ========================================= */
 
-/* Bolitas de color */
-.a5-colores { display: flex; gap: 8px; align-items: center; }
-.a5-color { width: 24px; height: 24px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--borde); cursor: pointer; transition: .2s; }
-.a5-color.activo { box-shadow: 0 0 0 2px var(--negro); transform: scale(1.1); }
-.a5-color-texto { font-size: .8rem; color: var(--gris); }
+/* Fondo general de la sección y color del título */
+.a5-seccion { 
+    background: linear-gradient(180deg, #ffffff, #faf5ff); 
+    padding: 40px 0;
+}
+
+.a5-seccion .titulo-seccion { 
+    color: #9b59b6; 
+}
+
+.a5-seccion .filtro.activo { 
+    background: #9b59b6; 
+    border-color: #9b59b6; 
+    color: white;
+}
+
+/* Contenedor de las bolitas de color */
+.a5-colores { 
+    display: flex; 
+    gap: 8px; 
+    align-items: center; 
+    margin-bottom: 8px; 
+}
+
+/* Estilo de cada bolita */
+.a5-color { 
+    width: 24px; 
+    height: 24px; 
+    border-radius: 50%; 
+    border: 2px solid #fff; 
+    box-shadow: 0 0 0 1px var(--borde); 
+    cursor: pointer; 
+    transition: .2s; 
+}
+
+.a5-color.activo { 
+    box-shadow: 0 0 0 2px var(--negro); 
+    transform: scale(1.1); 
+}
+
+.a5-color-texto { 
+    font-size: .8rem; 
+    color: var(--gris); 
+    margin-bottom: 12px; 
+}
+
+/* Tallas (Reto Extra) */
+.a5-tallas {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.a5-talla-btn {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+    transition: 0.2s;
+}
+
+.a5-talla-btn:hover {
+    background: #9b59b6;
+    color: white;
+    border-color: #9b59b6;
+}
