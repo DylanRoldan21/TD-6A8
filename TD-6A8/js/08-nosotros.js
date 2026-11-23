@@ -23,6 +23,7 @@
   const testimonios = document.querySelectorAll('.a8-testimonio');
   const puntos = document.querySelector('.a8-puntos');
   let actual = 0;
+  let temporizador;
 
   testimonios.forEach((t, i) => {
     const punto = document.createElement('button');
@@ -34,11 +35,16 @@
   function mostrar(n) {
     testimonios[actual].classList.remove('activo');
     puntos.children[actual].classList.remove('activo');
-    actual = n % testimonios.length;
+    actual = (n + testimonios.length) % testimonios.length;
     testimonios[actual].classList.add('activo');
     puntos.children[actual].classList.add('activo');
   }
 
+  function reiniciar() {
+    clearInterval(temporizador);
+    temporizador = setInterval(() => mostrar(actual + 1), 6000);
+  }
+
   mostrar(0);
-  setInterval(() => mostrar(actual + 1), 6000); // cambia cada 6 segundos
+  reiniciar();
 })();

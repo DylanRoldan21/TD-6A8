@@ -1,12 +1,12 @@
-/* ALUMNO 1 - Header + Banner + Carrito. Usa SOLO clases que empiecen con .a1- */
+/* ALUMNO 1 - Header + Banner + Carrito. Solo clases .a1- */
 
 /* Barra de anuncio */
-.a1-anuncio { background: var(--negro); color: var(--blanco); text-align: center; font-size: .75rem; letter-spacing: 2px; padding: 8px 10px; }
+.a1-anuncio { background: #8b1a1a; color: var(--blanco); text-align: center; font-size: .75rem; letter-spacing: 2px; padding: 8px 10px; }
 
 /* Menú */
 .a1-header { position: sticky; top: 0; z-index: 60; background: rgba(255, 255, 255, .97); border-bottom: 1px solid var(--borde); }
 .a1-nav { display: flex; align-items: center; justify-content: space-between; height: 70px; gap: 20px; position: relative; }
-.a1-logo { font-family: var(--fuente-titulo); font-size: 1.6rem; font-weight: 700; letter-spacing: 2px; }
+.a1-logo { font-family: var(--fuente-titulo); font-size: 2rem; font-weight: 700; letter-spacing: 2px; }
 .a1-logo span { color: var(--acento); font-style: italic; margin-left: 6px; }
 .a1-links { display: flex; gap: 26px; }
 .a1-links a { font-size: .82rem; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; position: relative; }
@@ -29,6 +29,7 @@
 .a1-lista li { display: flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px dashed var(--borde); font-size: .9rem; }
 .a1-lista li.a1-vacio { color: var(--gris); justify-content: center; border: 0; }
 .a1-total { font-size: 1.1rem; margin-bottom: 14px; }
+.a1-vaciar { margin-bottom: 10px; }
 .a1-comprar { text-align: center; }
 
 /* Banner */

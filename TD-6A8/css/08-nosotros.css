@@ -6,7 +6,9 @@
 .a8-texto p { color: var(--gris); margin-bottom: 14px; }
 .a8-texto p strong { color: var(--negro); }
 .a8-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 28px; }
-.a8-stat { border-left: 3px solid var(--acento); padding-left: 14px; }
+
+/* TAREA 6: borde de los números (antes: 3px solid var(--acento)) */
+.a8-stat { border-left: 3px solid #d4af37; padding-left: 14px; }
 .a8-stat strong { display: block; font-family: var(--fuente-titulo); font-size: 2.4rem; line-height: 1.1; }
 .a8-stat span { font-size: .85rem; color: var(--gris); }
 
@@ -16,7 +18,9 @@
 .a8-testimonio { display: none; text-align: center; }
 .a8-testimonio.activo { display: block; animation: a8-aparecer .6s; }
 .a8-testimonio img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin: 0 auto 12px; border: 3px solid #fff; }
-.a8-estrellas { color: #f2b01e; font-size: 1.2rem; letter-spacing: 2px; }
+
+/* TAREA 6: color de las estrellas (antes: #f2b01e) */
+.a8-estrellas { color: #ff6b00; font-size: 1.2rem; letter-spacing: 2px; }
 .a8-comentario { font-family: var(--fuente-titulo); font-style: italic; font-size: 1.25rem; margin: 12px 0 16px; }
 .a8-testimonio span { font-size: .85rem; color: var(--gris); }
 .a8-puntos { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
