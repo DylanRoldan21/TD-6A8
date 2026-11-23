@@ -12,6 +12,12 @@
   panel.querySelector('.a1-cerrar').addEventListener('click', () => panel.classList.remove('abierto'));
   panel.querySelector('.a1-comprar').addEventListener('click', () => panel.classList.remove('abierto'));
 
+  // Botón "Vaciar carrito"
+  panel.querySelector('.a1-vaciar').addEventListener('click', () => {
+    window.carrito.length = 0;
+    document.dispatchEvent(new CustomEvent('carrito-actualizado', { detail: window.carrito }));
+  });
+
   // Cada vez que alguien agrega un producto, se actualiza el contador, la lista y el total
   document.addEventListener('carrito-actualizado', (evento) => {
     const productos = evento.detail;
@@ -27,7 +33,7 @@
   });
 
   // ---------- 3. Banner deslizante ----------
-  const VELOCIDAD = 5000; // milisegundos (5000 = 5 segundos)
+  const VELOCIDAD = 4000; // 4 segundos
   const slides = document.querySelectorAll('.a1-slide');
   const puntos = document.querySelector('.a1-puntos');
   let actual = 0;
