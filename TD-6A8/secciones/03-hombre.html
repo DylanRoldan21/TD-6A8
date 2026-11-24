@@ -13,18 +13,12 @@
       <button class="filtro" data-filtro="casacas">Casacas</button>
     </div>
 
-    <!--
-      CÓMO EDITAR UN PRODUCTO (cada <article> es un producto):
-        data-nombre   = nombre que se guarda en el carrito
-        data-precio   = precio SOLO con números y punto (ej: 49.90)
-        data-categoria= debe ser IGUAL al data-filtro de un botón de arriba
-      El nombre y el precio también se escriben en el texto visible (h3 y p).
-      Para agregar un producto: copia un <article> completo y pégalo debajo.
-    -->
     <div class="grid-productos">
+
+      <!-- ================= POLOS ================= -->
       <article class="producto" data-categoria="polos" data-nombre="Polo Básico Negro" data-precio="49.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre1.svg" alt="Polo Básico Negro">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeshmFxQnXInLlYvZggqYAI1AaqBCF8z67o4eJSehMA&s=10" alt="Polo Básico Negro">
           <span class="producto-etiqueta">NUEVO</span>
         </div>
         <div class="producto-info">
@@ -39,7 +33,7 @@
 
       <article class="producto" data-categoria="polos" data-nombre="Polo Oversize Blanco" data-precio="59.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre2.svg" alt="Polo Oversize Blanco">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_952200-MPE98076299410_112025-O-polo-adidas-urbano-essentials-hombre-blanco-jw1952.webp" alt="Polo Oversize Blanco">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Polo Oversize Blanco</h3>
@@ -51,9 +45,25 @@
         </div>
       </article>
 
+      <article class="producto" data-categoria="polos" data-nombre="Polo Piqué Azul Marino" data-precio="69.90">
+        <div class="producto-foto">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLwuu6WB43_WwQZQV6nit6AXa883rAuUBerAcgI-e-hIc9k-qVIKrH8j0&s=10" alt="Polo Piqué Azul Marino">
+          <span class="producto-etiqueta">NUEVO</span>
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Polo Piqué Azul Marino</h3>
+          <p class="producto-precio">S/ 69.90</p>
+          <div class="a3-tallas">
+            <button>S</button><button>M</button><button>L</button><button>XL</button>
+          </div>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- ================= CAMISAS ================= -->
       <article class="producto" data-categoria="camisas" data-nombre="Camisa Oxford Celeste" data-precio="89.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre3.svg" alt="Camisa Oxford Celeste">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_799838-MPE106017360621_012026-O.webp" alt="Camisa Oxford Celeste">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Camisa Oxford Celeste</h3>
@@ -67,7 +77,7 @@
 
       <article class="producto" data-categoria="camisas" data-nombre="Camisa de Lino Beige" data-precio="99.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre4.svg" alt="Camisa de Lino Beige">
+          <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=600&q=80" alt="Camisa de Lino Beige">
           <span class="producto-etiqueta">NUEVO</span>
         </div>
         <div class="producto-info">
@@ -80,15 +90,30 @@
         </div>
       </article>
 
+      <article class="producto" data-categoria="camisas" data-nombre="Camisa Manga Corta Blanca" data-precio="79.90">
+        <div class="producto-foto">
+          <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80" alt="Camisa Manga Corta Blanca">
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Camisa Manga Corta Blanca</h3>
+          <p class="producto-precio">S/ 79.90</p>
+          <div class="a3-tallas">
+            <button>S</button><button>M</button><button>L</button><button>XL</button>
+          </div>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- ================= PANTALONES ================= -->
       <article class="producto" data-categoria="pantalones" data-nombre="Jean Slim Azul" data-precio="119.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre5.svg" alt="Jean Slim Azul">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe-Ajj5lHaPQt0kw1Ddgwqhv33L-EGMxNQeL9Ot0mhbA&s=10" alt="Jean Slim Azul">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Jean Slim Azul</h3>
           <p class="producto-precio">S/ 119.90</p>
           <div class="a3-tallas">
-            <button>S</button><button>M</button><button>L</button><button>XL</button>
+            <button>28</button><button>30</button><button>32</button><button>34</button>
           </div>
           <button class="btn-agregar">Agregar al carrito</button>
         </div>
@@ -96,21 +121,37 @@
 
       <article class="producto" data-categoria="pantalones" data-nombre="Jogger Cargo Verde" data-precio="99.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre6.svg" alt="Jogger Cargo Verde">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZoQ3CWb13ua5NYv4lFyHc58tJy85mYRmXkN586OQbw&s=10" alt="Jogger Cargo Verde">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Jogger Cargo Verde</h3>
           <p class="producto-precio">S/ 99.90</p>
           <div class="a3-tallas">
-            <button>S</button><button>M</button><button>L</button><button>XL</button>
+            <button>28</button><button>30</button><button>32</button><button>34</button>
           </div>
           <button class="btn-agregar">Agregar al carrito</button>
         </div>
       </article>
 
+      <article class="producto" data-categoria="pantalones" data-nombre="Pantalón Chino Beige" data-precio="109.90">
+        <div class="producto-foto">
+          <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&q=80" alt="Pantalón Chino Beige">
+          <span class="producto-etiqueta">OFERTA</span>
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Pantalón Chino Beige</h3>
+          <p class="producto-precio">S/ 109.90</p>
+          <div class="a3-tallas">
+            <button>28</button><button>30</button><button>32</button><button>34</button>
+          </div>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
+      <!-- ================= CASACAS ================= -->
       <article class="producto" data-categoria="casacas" data-nombre="Casaca Denim" data-precio="159.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre7.svg" alt="Casaca Denim">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQacAmWl5GvBR3xbY09yneVoygRWMjDqMuRK7olieodzA&s=10" alt="Casaca Denim">
         </div>
         <div class="producto-info">
           <h3 class="producto-nombre">Casaca Denim</h3>
@@ -124,7 +165,7 @@
 
       <article class="producto" data-categoria="casacas" data-nombre="Casaca Bomber Negra" data-precio="179.90">
         <div class="producto-foto">
-          <img src="img/alumno3/hombre8.svg" alt="Casaca Bomber Negra">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80" alt="Casaca Bomber Negra">
           <span class="producto-etiqueta">TOP</span>
         </div>
         <div class="producto-info">
@@ -136,6 +177,21 @@
           <button class="btn-agregar">Agregar al carrito</button>
         </div>
       </article>
+
+      <article class="producto" data-categoria="casacas" data-nombre="Casaca Cortaviento Gris" data-precio="139.90">
+        <div class="producto-foto">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGh7jLZ8UPbf_ZM2WBsDkYwY2OXQa3X5YDwl2RgrY8ng&s=10"Casaca Cortaviento Gris">
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-nombre">Casaca Cortaviento Gris</h3>
+          <p class="producto-precio">S/ 139.90</p>
+          <div class="a3-tallas">
+            <button>S</button><button>M</button><button>L</button><button>XL</button>
+          </div>
+          <button class="btn-agregar">Agregar al carrito</button>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
